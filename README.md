@@ -19,3 +19,6 @@ When all Pairs are found, a summary of your achievement will appear stating your
 ## To Do: 
   * Add touch support
   * Customize CSS 
+
+## Dependencies
+  * [Font Awesome](https://fontawesome.com/ "Font Awesome")
