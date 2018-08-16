@@ -24,15 +24,15 @@ let timerOff = true;
 shuffleDeck();
 
 function shuffle(array) {
-    let currentIndex = array.length, temporaryValue, randomIndex;
-    while (currentIndex !== 0) {
+  let currentIndex = array.length, temporaryValue, randomIndex;
+  while (currentIndex !== 0) {
         randomIndex = Math.floor(Math.random() * currentIndex);
         currentIndex -= 1;
         temporaryValue = array[currentIndex];
         array[currentIndex] = array[randomIndex];
         array[randomIndex] = temporaryValue;
-    };
-    return array;
+  };
+  return array;
 };
 
 function shuffleDeck(){
@@ -61,12 +61,26 @@ function resetGame() {
     };
   };
   shuffleDeck();
+  resetMoves();
+  resetStars();
+  resetTime();
+};
+
+function resetMoves() {
   moveNum = 0;
   movesText.innerHTML = moveNum;
+};
+
+function resetStars() {
+  for (star of stars) {
+    star.style.display = 'inline';
+  };
+};
+
+function resetTime() {
   time = 0;
   timerOff = true;
 };
-
 /*
  * Moves and Stars
 */
