@@ -185,3 +185,41 @@ li {
     float: right;
     cursor: pointer;
 }
+
+@media screen and (max-width: 700px){
+  .deck {
+    width: 480px;
+    min-height: 500px;
+    padding: 24px;
+    margin: 0 0 2em;
+  }
+
+  .deck
+  .card {
+    height: 95px;
+    width: 95px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .deck {
+    width: 305px;
+    min-height: 325px;
+    padding: 24px;
+    margin: 0 0 2em;
+  }
+
+  .deck
+  .card {
+    height: 60px;
+    width: 60px;
+  }
+
+  .modal_body {
+    width: 300px;
+  }
+
+  .score-panel {
+    width: 300px;
+  }
+}
